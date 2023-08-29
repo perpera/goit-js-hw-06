@@ -5,7 +5,7 @@ inputField.addEventListener("blur", onFocusChange);
 
 function onFocusChange(event) {
   const reqNumOfSymbols = inputField.dataset.length;
-  const inputSymbols = inputField.value.length;
+  const inputSymbols = inputField.value.trim().length;
 
   if (inputSymbols === Number(reqNumOfSymbols)) {
     inputField.classList.remove("invalid");

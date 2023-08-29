@@ -5,6 +5,6 @@ const username = document.querySelector("#name-output");
 inputField.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
-  const initialValue = event.currentTarget.value;
+  const initialValue = event.currentTarget.value.trim();
   username.textContent = initialValue === "" ? "Anonymus" : initialValue;
 }

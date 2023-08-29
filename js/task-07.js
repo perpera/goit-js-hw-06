@@ -7,6 +7,6 @@ text.style.fontSize = initialFontSize;
 
 range.addEventListener("input", onChange);
 function onChange(event) {
-  const fontSize = event.target.value + "px";
+  const fontSize = range.value + "px";
   text.style.fontSize = fontSize;
 }
